@@ -13,7 +13,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 . /lib/init/vars.sh
 
-OPTS="--pcm --idle-timeout=1000 --min=53 --max=260 --p1pins='7'"
+OPTS="--pcm --idle-timeout=1000 --min=53 --max=260 --p1pins=7"
 
 res=0
 
