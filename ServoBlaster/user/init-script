@@ -13,7 +13,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 . /lib/init/vars.sh
 
-OPTS="--idle-timeout=2000"
+OPTS="--pcm --idle-timeout=1000 --min=53 --max=260 --p1pins='7'"
 
 res=0
 
@@ -32,7 +32,7 @@ case "$1" in
 	[ -e /dev/servoblaster ] || res=4
 	;;
   *)
-	echo "Usage: servoblaster [start|stop|status]" >&2
+	echo "Usage: servoblaster [start|stop|restart|reload|force-reload|status]" >&2
 	res=3
 	;;
 esac
